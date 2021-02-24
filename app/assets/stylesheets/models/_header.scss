@@ -1,0 +1,18 @@
+.header {
+  width: auto;
+  height: 145px;
+  background-color: rgb(180, 180, 180);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .area {
+    width: 730px;
+    height: 145px;
+    background-color: hotpink;
+  }
+  .title {
+    font-size: 90px;
+    font-family: Phosphate;
+    margin: 15px;
+  }
+}
