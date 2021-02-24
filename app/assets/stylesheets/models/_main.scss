@@ -27,9 +27,31 @@
         margin-left: 25px;
       }
     }
-    .name {
+    .team {
       height: 84px;
       background-color: burlywood;
+      font-size: 35px;
+      font-family: Arial;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .name_a {
+        width: 100vw;
+        height: 46px;
+        background-color: cyan;
+        text-align: end;
+      }
+      .vs {
+        margin: 0px 18px;
+
+      }
+      .name_b {
+        width: 100vw;
+        height: 46px;
+        background-color: cyan;
+        
+      }
     }
     .score {
       height: 84px;
