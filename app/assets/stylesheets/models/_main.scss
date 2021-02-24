@@ -1,0 +1,58 @@
+.main {
+  display: flex;
+  justify-content: center;
+  .__center {
+    width: 730px;
+    height: 100vw;
+    background-color: rgb(170, 235, 178);
+  }
+  .--block {
+    // height: 410px;
+    background-color: rgb(209, 233, 255);
+    border: 1px solid black;
+    margin: 40px 20px;
+    .topline {
+      height: 30px;
+      // background-color: brown;
+      display: flex;
+      align-items: center;
+      .text {
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: bold;
+        padding-top: 5px;
+        width: 200px;
+        height: 25px;
+        // background-color: cornflowerblue;
+        margin-left: 25px;
+      }
+    }
+    .name {
+      height: 84px;
+      background-color: burlywood;
+    }
+    .score {
+      height: 84px;
+      background-color: brown;
+    }
+    .body {
+      height: 182px;
+      background-color: burlywood;
+      padding: 25px;
+      .dataline {
+        height: 20px;
+        margin-bottom: 12px;
+        background-color: white
+      }
+      .report {
+        height: 150px;
+        background-color: blue;
+
+      }
+    }
+    .underline {
+      height: 30px;
+      background-color: brown;
+    }
+  }
+}
