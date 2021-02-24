@@ -1,0 +1,33 @@
+.header {
+  width: auto;
+  height: 145px;
+  background-color: rgb(180, 180, 180);
+  display: flex;
+  justify-content: center;
+  .__area {
+    width: 730px;
+    height: 145px;
+    // background-color: rgb(227, 235, 161);
+    display: flex;
+    justify-content: space-between;
+  }
+  .--left {
+  }
+  .__title {
+    font-size: 90px;
+    font-family: Phosphate;
+    margin: 15px;
+  }
+  .--right {
+    margin-top: auto;
+    margin-bottom: 13px;
+    
+  }
+  .__menuicon {
+    img {
+      width: 30px;
+      height: 30px;
+      margin: 13px;
+    }
+  }
+}
