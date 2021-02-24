@@ -4,16 +4,16 @@
   .__center {
     width: 730px;
     height: 100vw;
-    background-color: rgb(170, 235, 178);
+    // background-color: rgb(170, 235, 178);
   }
   .--block {
     // height: 410px;
-    background-color: rgb(209, 233, 255);
+    // background-color: rgb(209, 233, 255);
     border: 1px solid black;
     margin: 40px 20px;
     .topline {
       height: 30px;
-      // background-color: brown;
+      background-color: rgb(189, 186, 186);
       display: flex;
       align-items: center;
       .text {
@@ -29,7 +29,7 @@
     }
     .team {
       height: 84px;
-      background-color: burlywood;
+      // background-color: burlywood;
       font-size: 35px;
       font-family: Arial;
       font-weight: bold;
@@ -39,7 +39,7 @@
       .name_a {
         width: 100vw;
         height: 46px;
-        background-color: cyan;
+        background-color:  blanchedalmond;
         text-align: end;
       }
       .vs {
@@ -49,13 +49,12 @@
       .name_b {
         width: 100vw;
         height: 46px;
-        background-color: cyan;
-        
+        background-color:  blanchedalmond;
       }
     }
     .score {
       height: 84px;
-      background-color: brown;
+      background-color:rgb(189, 186, 186);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -73,7 +72,7 @@
     }
     .body {
       height: 182px;
-      background-color: burlywood;
+      // background-color: burlywood;
       padding: 25px;
       font-family: Arial;
       font-size: 14px;
@@ -81,7 +80,7 @@
         height: 20px;
         margin-bottom: 12px;
         font-weight: bold;
-        background-color: white;
+        background-color: blanchedalmond;
         display: flex;
         .day {
 
@@ -96,12 +95,12 @@
       }
       .report {
         height: 150px;
-        background-color: white;
+        background-color: blanchedalmond;
       }
     }
     .underline {
       height: 30px;
-      background-color: brown;
+      background-color:rgb(189, 186, 186);
       .text {
         font-family: Arial;
         font-size: 14px;
