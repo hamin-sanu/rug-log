@@ -4,15 +4,31 @@
   background-color: rgb(180, 180, 180);
   display: flex;
   justify-content: center;
-  align-items: center;
-  .area {
+  // align-items: center;
+  .__area {
     width: 730px;
     height: 145px;
     background-color: hotpink;
+    display: flex;
+    justify-content: space-between;
   }
-  .title {
+  .--left {
+  }
+  .__title {
     font-size: 90px;
     font-family: Phosphate;
     margin: 15px;
+  }
+  .--right {
+    margin-top: auto;
+    margin-bottom: 13px;
+    
+  }
+  .__menuicon {
+    img {
+      width: 30px;
+      height: 30px;
+      margin: 13px;
+    }
   }
 }
