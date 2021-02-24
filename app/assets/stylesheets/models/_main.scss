@@ -97,12 +97,19 @@
       .report {
         height: 150px;
         background-color: white;
-
       }
     }
     .underline {
       height: 30px;
       background-color: brown;
+      .text {
+        font-family: Arial;
+        font-size: 14px;
+        padding-top: 5px;
+        text-align: end;
+        margin-right: 25px;
+
+      }
     }
   }
 }
