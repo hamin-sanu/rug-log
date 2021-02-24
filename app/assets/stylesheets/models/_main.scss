@@ -78,7 +78,21 @@
       .dataline {
         height: 20px;
         margin-bottom: 12px;
-        background-color: white
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: white;
+        display: flex;
+        .day {
+
+        }
+        .how {
+          margin: 0px 20px;
+
+        }
+        .location {
+
+        }
       }
       .report {
         height: 150px;
