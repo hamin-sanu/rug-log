@@ -5,7 +5,8 @@
         Rug_Log
     .--right
       .__menuicon
-        = image_tag "newpen_icon.png"
+        = link_to newLog_path do
+          = image_tag "newpen_icon.png"
         - if user_signed_in?
           = link_to destroy_user_session_path do
             = image_tag "signout_icon.png" 
