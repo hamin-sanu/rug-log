@@ -6,5 +6,10 @@
     .--right
       .__menuicon
         = image_tag "newpen_icon.png"
-        = image_tag "signout_icon.png"
+        - if user_signed_in?
+          = link_to destroy_user_session_path do
+            = image_tag "signout_icon.png" 
+        - else
+          = link_to new_user_session_path do
+            = image_tag "signout_icon.png"
         = image_tag "mypage_icon.png"
