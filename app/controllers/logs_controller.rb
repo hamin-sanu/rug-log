@@ -4,4 +4,7 @@ class LogsController < ApplicationController
 
   def newLog
   end
+
+  def log
+  end
 end

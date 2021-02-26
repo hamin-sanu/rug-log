@@ -2,21 +2,46 @@
   .top
     .title NEW_LOG
   .main
-    .formarea
-      .text カテゴリー
-      .form 大学ラグビー
-    .formarea
-      .text2 対戦カード
-      .aaa
-        .form 帝京大学
-        .vs vs
-        .form 明治大学
-      .text2 スコア
-      .aaa
-        .form 帝京大学
-        .vs vs
-        .form 明治大学
-      .text 試合日
+    = form_with(model: @log, local: true) do |f|
+      .formarea
+        .text カテゴリー
+        .form
+          = f.select :category, [["大学ラグビー"], ["トップリーグ"], ["高校ラグビー"], ["ワールドカップ"]], include_blank: "選択して下さい"
+      .formarea
+        .text2 対戦カード
+        .aaa
+          .form 
+            = f.text_field :team_a, autofocus: true, autocomplete: "name", placeholder: '例) 佐藤大学'
+          .vs vs
+          .form
+            = f.text_field :team_b, autofocus: true, autocomplete: "name", placeholder: '例) 田中大学'
+      .formarea
+        .text2 スコア
+        .aaa
+          .form
+            = f.text_field :score_a, autofocus: true, autocomplete: "name", placeholder: '例) 10'
+          .vs vs
+          .form
+            = f.text_field :score_b, autofocus: true, autocomplete: "name", placeholder: '例) 79'
+      .formarea
+        .text 試合日
+        .form
+          = f.text_field :score_b, autofocus: true, autocomplete: "name", placeholder: '例) 79'
+
+      .formarea
+        .text 観戦方法
+        .form
+          = f.text_field :score_b, autofocus: true, autocomplete: "name", placeholder: '例) 79'
+      
+      .formarea
+        .text 試合場所
+        .form
+          = f.text_field :score_b, autofocus: true, autocomplete: "name", placeholder: '例) 花園（大阪）'
+      
+      .formarea
+        .text 感想
+        .form2
+          = f.text_field :score_b, autofocus: true, autocomplete: "name", placeholder: '例) 79'
       
       
       
