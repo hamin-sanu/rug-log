@@ -7,6 +7,6 @@ Rails.application.routes.draw do
 
   root to: 'logs#index'
 
-  get 'newLog',to: 'logs#newLog'
+  get 'newLog',to: 'logs#new'
   
 end

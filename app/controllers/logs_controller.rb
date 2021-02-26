@@ -2,7 +2,7 @@ class LogsController < ApplicationController
   def index
   end
 
-  def newLog
+  def new
   end
 
   def log
