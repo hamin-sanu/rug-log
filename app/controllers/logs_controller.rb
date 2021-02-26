@@ -3,6 +3,7 @@ class LogsController < ApplicationController
   end
 
   def new
+    @category = Category.all
   end
 
   def log

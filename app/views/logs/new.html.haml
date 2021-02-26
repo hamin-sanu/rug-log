@@ -6,7 +6,7 @@
       .formarea
         .text カテゴリー
         .form
-          -# = f.collection_select :category_id,@categories, :id, :name,{include_blank: "---"}
+          = f.collection_select :category, @category, :id, :name,{include_blank: "---"}
       .formarea
         .text2 対戦カード
         .aaa
