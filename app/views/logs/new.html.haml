@@ -6,7 +6,7 @@
       .formarea
         .text カテゴリー
         .form
-          = f.collection_select :category, @category, :id, :name,{include_blank: "---"}
+          = f.collection_select :category, @category, :id, :name, {include_blank: "---"}
       .formarea
         .text2 対戦カード
         .aaa
@@ -31,7 +31,14 @@
       .formarea
         .text 観戦方法
         .form
-          = f.text_field :score_b, autofocus: true, autocomplete: "name", placeholder: '例) 79'
+          = f.radio_button :how, "中継" 
+          = f.label :how_中継, "中継"
+          
+          = f.radio_button :how, "録画"
+          = f.label :how_録画, "録画"
+          
+          = f.radio_button :how, "現地"
+          = f.label :how_現地, "現地"
       
       .formarea
         .text 試合場所
