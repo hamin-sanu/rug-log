@@ -14,9 +14,13 @@
   .--left {
   }
   .__title {
-    font-size: 90px;
-    font-family: Phosphate;
-    margin: 15px;
+    a {
+      font-size: 90px;
+      font-family: Phosphate;
+      margin: 15px;
+      text-decoration: none;
+      color: black;
+    }
   }
   .--right {
     margin-top: auto;
