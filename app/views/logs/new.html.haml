@@ -28,12 +28,12 @@
         .form
           = f.text_field :score_b, autofocus: true, autocomplete: "name", placeholder: '例) 79'
 
-      .formarea
+      .formarea2
         .text 観戦方法
         .form
           = f.radio_button :how, "中継" 
           = f.label :how_中継, "中継"
-          
+
           = f.radio_button :how, "録画"
           = f.label :how_録画, "録画"
           
@@ -49,6 +49,9 @@
         .text 感想
         .form2
           = f.text_field :score_b, autofocus: true, autocomplete: "name", placeholder: '例) 79'
+
+      .btn 
+        = f.submit "投稿する"
       
       
       
