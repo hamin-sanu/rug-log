@@ -3,7 +3,7 @@ class CreateLogs < ActiveRecord::Migration[6.0]
     create_table :logs do |t|
       t.text :body,              null: false
       t.date :matchData,         null: false
-      t.integer :how,            null: false
+      t.string :how,            null: false
       t.string :location        
       t.string :team_a,          null: false
       t.string :team_b,          null: false

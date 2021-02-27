@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2021_02_26_094248) do
   create_table "logs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "body", null: false
     t.date "matchData", null: false
-    t.integer "how", null: false
+    t.string "how", null: false
     t.string "location"
     t.string "team_a", null: false
     t.string "team_b", null: false
