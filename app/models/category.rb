@@ -1,3 +1,3 @@
 class Category < ApplicationRecord
-  belongs_to :log, optional: true
+  has_many :log
 end
