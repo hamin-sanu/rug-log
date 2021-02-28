@@ -1,12 +1,12 @@
 .main {
   display: flex;
   justify-content: center;
-  .__center {
+  .center {
     width: 730px;
     height: 100vw;
     // background-color: rgb(170, 235, 178);
   }
-  .--block {
+  .__block {
     // height: 410px;
     // background-color: rgb(209, 233, 255);
     border: 1px solid black;

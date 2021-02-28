@@ -11,6 +11,9 @@ class LogsController < ApplicationController
 
   end
 
+  def show
+  end
+
   def create
     @log = Log.create(log_params)
     # user_id = current_user.id
