@@ -6,4 +6,6 @@ class Log < ApplicationRecord
     validates :user_id
     validates :category_id
   end
+
+  default_scope -> { order(created_at: :desc) }
 end

@@ -1,8 +1,8 @@
 .main
   .center
-    .__block
-      - @logs.each do |log|
-      - @category = Category.all
+    - @logs.each do |log|
+    - @category = Category.all
+      .__block
         .topline
           .text
             = log.category.name
