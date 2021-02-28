@@ -1,3 +1,5 @@
+$block-color:#f44336;
+
 .main {
   display: flex;
   justify-content: center;
@@ -13,7 +15,7 @@
     margin: 40px 20px;
     .topline {
       height: 30px;
-      background-color: rgb(189, 186, 186);
+      background-color: $block-color;
       display: flex;
       align-items: center;
       .text {
@@ -54,7 +56,7 @@
     }
     .score {
       height: 84px;
-      background-color:rgb(189, 186, 186);
+      background-color:$block-color;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -100,7 +102,7 @@
     }
     .underline {
       height: 30px;
-      background-color:rgb(189, 186, 186);
+      background-color:$block-color;
       .text {
         font-family: Arial;
         font-size: 14px;

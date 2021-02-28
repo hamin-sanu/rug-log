@@ -1,7 +1,7 @@
 .header {
   width: auto;
   height: 145px;
-  background-color: rgb(180, 180, 180);
+  background-color: #ab000d;
   display: flex;
   justify-content: center;
   .__area {
@@ -19,7 +19,7 @@
       font-family: Phosphate;
       margin: 15px;
       text-decoration: none;
-      color: black;
+      color: #fafafa;
     }
   }
   .--right {
@@ -28,7 +28,10 @@
     
   }
   .__menuicon {
-    img {
+    a {
+      text-decoration: none;
+    }
+    .iconImg {
       width: 30px;
       height: 30px;
       margin: 13px;
