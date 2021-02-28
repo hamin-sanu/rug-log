@@ -7,5 +7,8 @@ Rails.application.routes.draw do
 
   root to: 'logs#index'
 
+  get 'logs',to: 'logs#new'
+
+  resources :logs
   
 end

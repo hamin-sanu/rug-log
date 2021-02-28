@@ -1,0 +1,62 @@
+= render "header"
+
+.newLog
+  .top
+    .title NEW_LOG
+  .main
+    = form_with(model: @log, local: true) do |f|
+      .formarea
+        .text カテゴリー
+        .form
+          = f.collection_select :category_id, @category, :id, :name, {include_blank: "---"}
+      .formarea
+        .text2 対戦カード
+        .aaa
+          .form 
+            = f.text_field :team_a, autofocus: true, autocomplete: "name", placeholder: '例) 佐藤大学'
+          .vs vs
+          .form
+            = f.text_field :team_b, autofocus: true, autocomplete: "name", placeholder: '例) 田中大学'
+      .formarea
+        .text2 スコア
+        .aaa
+          .form
+            = f.text_field :score_a, autocomplete: "name", placeholder: '例) 10'
+          .vs vs
+          .form
+            = f.text_field :score_b, autocomplete: "name", placeholder: '例) 79'
+      .formarea
+        .text 試合日
+        .form
+          != sprintf(f.date_select(:matchData,prompt:"--",start_year:Time.now.year,end_year:Time.now.year-100,use_month_numbers:true, autocomplete: "new-password",date_separator:'%s'),'年','月')+'日'
+          -# = f.text_field :score_b, autofocus: true, autocomplete: "name", placeholder: '例) 79'
+
+      .formarea2
+        .text 観戦方法
+        .form
+          = f.radio_button :how, "中継" 
+          = f.label :how_中継, "中継"
+
+          = f.radio_button :how, "録画"
+          = f.label :how_録画, "録画"
+          
+          = f.radio_button :how, "現地"
+          = f.label :how_現地, "現地"
+      
+      .formarea
+        .text 試合場所
+        .form
+          = f.text_field :location, autofocus: true, autocomplete: "name", placeholder: '例) 花園（大阪）'
+      
+      .formarea
+        .text 感想
+        .form2
+          = f.text_area :body, rows:"5", autocomplete: "name", placeholder: '例) 79'
+
+      .btn 
+        = f.submit "投稿する"
+      
+      
+      
+      
+  

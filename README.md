@@ -36,7 +36,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |body|text|null: false|
-|data|data|null: false|
+|matchData|data|null: false|
 |how|integer|null: false|
 |location|string|null: false|
 |team_a|string|null: false|

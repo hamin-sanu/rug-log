@@ -1,22 +1,32 @@
 .main
-  .__center
-
-    .--block
-      .topline
-        .text  大学ラグビー
-      .team
-        .name_a 明治大学
-        .vs vs
-        .name_b 天理大学
-        
-      .score
-        .__a 15
-        .__b 36
-      .body
-        .dataline
-          .day 2020年1月2日
-          .how 中継
-          .location 秩父宮（東京）
-        .report ここに本文が入ります。
-      .underline
-        .text 編集
+  .center
+    - @logs.each do |log|
+    - @category = Category.all
+      .__block
+        .topline
+          .text
+            = log.category.name
+        .team
+          .name_a
+            = log.team_a
+          .vs vs
+          .name_b
+            = log.team_b
+          
+        .score
+          .__a
+            = log.score_a
+          .__b
+            = log.score_b
+        .body
+          .dataline
+            .day
+              = log.matchData.strftime("%Y年%m月%d日")
+            .how
+              = log.how
+            .location
+              = log.location
+          .report
+            = log.body
+        .underline
+          .text 編集
