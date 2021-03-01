@@ -7,12 +7,12 @@
         -# Rug_Log
     .--right
       .__menuicon
-        = link_to  logs_path do
+        = link_to logs_path do
           = image_tag "newpen_icon.png", class: "iconImg"
         - if user_signed_in?
           = link_to destroy_user_session_path do
             = image_tag "signout_icon.png", class: "iconImg"
         - else
           = link_to new_user_session_path do
-            = image_tag "signout_icon.png", class: "iconImg"
+            = image_tag "login_icon.png", class: "iconImg"
         = image_tag "mypage_icon.png", class: "iconImg"

@@ -24,7 +24,20 @@ class LogsController < ApplicationController
   end
 
   def edit
+    @category = Category.all
     @log = Log.find(params[:id])
+  end
+
+  def update
+    @log = Log.find(params[:id])
+    @log.update(log_params)
+    redirect_to root_path(@log)
+  end
+
+  def destroy
+    @log = Log.find(params[:id])
+    @log.destroy
+    redirect_to root_path
   end
 
   private
