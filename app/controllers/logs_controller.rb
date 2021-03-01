@@ -23,6 +23,10 @@ class LogsController < ApplicationController
     redirect_to root_path
   end
 
+  def edit
+    @log = Log.find(params[:id])
+  end
+
   private
   def log_params
     params.require(:log).permit(:category_id, :team_a, :team_b, :score_a, :score_b, :delivery_fee_id, :matchData, :how, :location, :body).merge(user_id: current_user.id)
