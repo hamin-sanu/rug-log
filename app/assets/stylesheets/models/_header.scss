@@ -1,6 +1,6 @@
 .header {
   width: auto;
-  height: 145px;
+  height: 110px;
   background-color: #ab000d;
   display: flex;
   justify-content: center;
@@ -15,9 +15,9 @@
   }
   .__title {
     a {
-      font-size: 90px;
+      font-size: 80px;
       font-family: Phosphate;
-      margin: 15px;
+      margin-left: 20px;
       text-decoration: none;
       color: #fafafa;
     }
@@ -28,13 +28,14 @@
     
   }
   .__menuicon {
+    margin-right: 8px;
     a {
       text-decoration: none;
     }
     .iconImg {
-      width: 30px;
-      height: 30px;
-      margin: 13px;
+      width: 27px;
+      height: 27px;
+      margin: 0px 13px 35px;
     }
   }
 }

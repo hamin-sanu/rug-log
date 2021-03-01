@@ -1,4 +1,4 @@
-$block-color:#f44336;
+$block-color:#ff867c;
 
 .main {
   display: flex;
@@ -6,13 +6,10 @@ $block-color:#f44336;
   .center {
     width: 730px;
     height: 100vw;
-    // background-color: rgb(170, 235, 178);
   }
   .__block {
-    // height: 410px;
-    // background-color: rgb(209, 233, 255);
-    border: 1px solid black;
-    margin: 40px 20px;
+    border: 1px solid #616161;
+    margin: 30px 20px;
     .topline {
       height: 30px;
       background-color: $block-color;
@@ -25,13 +22,11 @@ $block-color:#f44336;
         padding-top: 5px;
         width: 200px;
         height: 25px;
-        // background-color: cornflowerblue;
         margin-left: 25px;
       }
     }
     .team {
       height: 84px;
-      // background-color: burlywood;
       font-size: 35px;
       font-family: Arial;
       font-weight: bold;
@@ -41,7 +36,6 @@ $block-color:#f44336;
       .name_a {
         width: 100vw;
         height: 46px;
-        // background-color:  blanchedalmond;
         text-align: end;
       }
       .vs {
@@ -51,7 +45,6 @@ $block-color:#f44336;
       .name_b {
         width: 100vw;
         height: 46px;
-        // background-color:  blanchedalmond;
       }
     }
     .score {
@@ -73,8 +66,6 @@ $block-color:#f44336;
       }
     }
     .body {
-      height: 182px;
-      // background-color: burlywood;
       padding: 25px;
       font-family: Arial;
       font-size: 14px;
@@ -82,7 +73,6 @@ $block-color:#f44336;
         height: 20px;
         margin-bottom: 12px;
         font-weight: bold;
-        // background-color: blanchedalmond;
         display: flex;
         .day {
 
@@ -96,8 +86,7 @@ $block-color:#f44336;
         }
       }
       .report {
-        height: 150px;
-        // background-color: blanchedalmond;
+        height: 120px;
       }
     }
     .underline {
@@ -106,11 +95,9 @@ $block-color:#f44336;
       .text {
         font-family: Arial;
         font-size: 14px;
-        padding-top: 5px;
+        padding-top: 7px;
         text-align: end;
-        margin-right: 25px;
-        // background-color: chartreuse;
-
+        margin-right: 30px;
       }
     }
   }
