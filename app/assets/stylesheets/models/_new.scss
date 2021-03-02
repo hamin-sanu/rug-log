@@ -84,17 +84,16 @@
           border-radius: 4px;
           transition: .4s;
           width: 130px;
-          // height: 48px;
-          // width: 200px;
-          // border: 1px solid #ccc;
-          // border-radius: 4px;
-          // font-size: 14px;
         }
         input:hover {
           background-color: #ab000d;
-          border-color: #ff867c;
           color: #FFF;
         } 
+      }
+      .dele_iconImg {
+        width: 27px;
+        height: 27px;
+        margin: 5px 0px 0px 40px;
       }
     }
   }

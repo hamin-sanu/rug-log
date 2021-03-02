@@ -29,4 +29,5 @@
           .report
             = log.body
         .underline
-          .text EDIT
+          .text 
+            = link_to 'EDIT', edit_log_path(log.id), method: :get
