@@ -8,7 +8,7 @@
         .form
           = f.collection_select :category_id, @category, :id, :name, {include_blank: "---"}
       .formarea
-        .text 対戦カード
+        .text 対戦カード（8文字以内）
         .formarea__group
           .form 
             = f.text_field :team_a, autofocus: true, autocomplete: "name", placeholder: '例) 佐藤大学'

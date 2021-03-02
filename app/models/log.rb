@@ -7,7 +7,7 @@ class Log < ApplicationRecord
     validates :category_id
     validates :body
     validates :matchData
-    validates :how, acceptance: true
+    validates :how
     validates :team_a, length: { maximum: 8 }
     validates :team_b, length: { maximum: 8 }
   end

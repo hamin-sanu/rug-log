@@ -19,3 +19,6 @@
           = link_to new_user_session_path(current_user) do
             = image_tag("login_icon.png", class: "iconImg")
         = image_tag("mypage_icon.png", class: "iconImg")
+%body
+  = render 'layouts/notifications'
+  = yield
