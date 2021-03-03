@@ -16,11 +16,12 @@ class LogsController < ApplicationController
 
   def create
     @log = Log.create(log_params)
-    # user_id = current_user.id
-    # # category_id = category_id
-    # @log = Log.new(user_id: user_id, category_id: @category)
-    # # @log.save
-    redirect_to root_path
+    if @log.valid?
+      redirect_to root_path, notice: '新しいログを投稿しました！'
+    else 
+      flash[:alert] = '投稿できませんでした。項目を確認してください。'
+      redirect_to action: "new"
+    end
   end
 
   def edit
@@ -31,13 +32,13 @@ class LogsController < ApplicationController
   def update
     @log = Log.find(params[:id])
     @log.update(log_params)
-    redirect_to root_path(@log)
+    redirect_to root_path(@log), notice: 'ログを編集しました。'
   end
 
   def destroy
     @log = Log.find(params[:id])
     @log.destroy
-    redirect_to root_path
+    redirect_to root_path, notice: 'ログを削除しました。'
   end
 
   private

@@ -8,7 +8,7 @@
         .form
           = f.collection_select :category_id, @category, :id, :name, {include_blank: "---"}
       .formarea
-        .text 対戦カード
+        .text 対戦カード（8文字以内）
         .formarea__group
           .form 
             = f.text_field :team_a, autofocus: true, autocomplete: "name", placeholder: '例) 佐藤大学'
@@ -19,10 +19,10 @@
         .text スコア
         .formarea__group
           .form
-            = f.text_field :score_a, autocomplete: "name", placeholder: '例) 10'
+            = f.text_field :score_a, autocomplete: "name", placeholder: '半角数字'
           .vs vs
           .form
-            = f.text_field :score_b, autocomplete: "name", placeholder: '例) 79'
+            = f.text_field :score_b, autocomplete: "name", placeholder: '半角数字'
       .formarea
         .text 試合日
         .data
