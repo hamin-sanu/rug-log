@@ -56,13 +56,19 @@ $block-color:#ffcdd2;
       .__a {
         font-family: 凸版文久見出しゴシック;
         font-size: 75px;
-        margin-right: 35px;
+        margin-right: 32px;
         text-align: end;
       }
       .__b {
         font-family: 凸版文久見出しゴシック;
         font-size: 75px;
-        margin-left: 35px;
+        margin-left: 37px;
+      }
+      .__acBtn {
+        position: relative;
+        top: 20px;
+        left: 180px;
+        font-size: 18px;
       }
     }
     .body {
