@@ -66,27 +66,23 @@ $block-color:#ffcdd2;
       }
     }
     .body {
-      padding: 25px;
+      // padding: 25px;
       font-family: Arial;
       font-size: 14px;
       .dataline {
         height: 20px;
+        padding: 25px 0 0 25px;
         margin-bottom: 12px;
         font-weight: bold;
         display: flex;
-        .day {
-
-        }
         .how {
           margin: 0px 20px;
-
-        }
-        .location {
 
         }
       }
       .report {
         height: 120px;
+        padding: 0 25px 0 23px;
       }
     }
     .underline {
