@@ -8,7 +8,7 @@ $block-color:#ffcdd2;
     height: 100vw;
   }
   .__block {
-    border: 1px solid #bcaaa4;
+    border: 1px solid black;
     margin: 30px 20px;
     .topline {
       height: 30px;
@@ -75,6 +75,7 @@ $block-color:#ffcdd2;
       // padding: 25px;
       font-family: Arial;
       font-size: 14px;
+      display: none;
       .dataline {
         height: 20px;
         padding: 25px 0 0 25px;
