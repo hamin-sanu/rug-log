@@ -18,6 +18,11 @@
             = log.score_a
           .__b
             = log.score_b
+          .__acBtnDown
+            = icon('fas', 'angle-down')
+          .__acBtnUp
+            = icon('fas', 'angle-up')
+          
         .body
           .dataline
             .day
@@ -28,6 +33,6 @@
               = log.location
           .report
             = log.body
-        .underline
-          .text 
-            = link_to 'EDIT', edit_log_path(log.id), method: :get
+          .underline
+            .text 
+              = link_to 'EDIT', edit_log_path(log.id), method: :get

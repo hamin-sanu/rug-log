@@ -51,7 +51,7 @@
           = f.text_area :body, rows:"3", autocomplete: "off"
       .btnarea
         .btn 
-          = f.submit "PUSH"
+          = f.submit "EDIT"
         .delete
           = link_to log_path(@log), method: :delete do
             = image_tag "delete_icon.png", class: "dele_iconImg"

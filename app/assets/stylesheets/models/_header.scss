@@ -12,12 +12,9 @@
   .--left {
   }
   .__title {
-    a {
-      font-size: 80px;
-      font-family: Phosphate;
-      margin-left: 20px;
-      text-decoration: none;
-      color: #fafafa;
+    .logoImg {
+      width: 407px;
+      height: 105px;
     }
   }
   .--right {
@@ -25,6 +22,9 @@
     margin-right: 15px;
   }
   .__menuicon {
+    //   画像化する前のフォント、サイズのデータは以下。
+    //   font-size: 80px;
+    //   font-family: Phosphate;
     margin-right: 8px;
     a {
       text-decoration: none;
