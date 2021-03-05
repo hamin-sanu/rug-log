@@ -69,6 +69,7 @@ $block-color:#ffcdd2;
         top: 20px;
         left: 180px;
         font-size: 25px;
+        display: block;
       }
       .__acBtnUp {
         position: relative;
@@ -79,7 +80,6 @@ $block-color:#ffcdd2;
       }
     }
     .body {
-      // padding: 25px;
       font-family: Arial;
       font-size: 14px;
       display: none;
@@ -91,7 +91,6 @@ $block-color:#ffcdd2;
         display: flex;
         .how {
           margin: 0px 20px;
-
         }
       }
       .report {
