@@ -64,11 +64,18 @@ $block-color:#ffcdd2;
         font-size: 75px;
         margin-left: 37px;
       }
-      .__acBtn {
+      .__acBtnDown {
         position: relative;
         top: 20px;
         left: 180px;
-        font-size: 18px;
+        font-size: 25px;
+      }
+      .__acBtnUp {
+        position: relative;
+        top: 20px;
+        left: 180px;
+        font-size: 25px;
+        display: none;
       }
     }
     .body {
